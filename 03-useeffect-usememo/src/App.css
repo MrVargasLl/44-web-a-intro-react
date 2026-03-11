@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor input {
+  margin-left: 20px;
+text-align: center;}
+
+.contenedor button {
+  margin-top: 12px;
+  margin-left: 20px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contenedor button:hover {
+  background-color: lightgreen;
+  color: black;
+}

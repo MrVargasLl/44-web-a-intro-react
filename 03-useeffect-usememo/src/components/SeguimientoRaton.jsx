@@ -11,11 +11,11 @@ export const SeguimientoRaton = () => {
             }
 
             window.addEventListener("mousemove", manejarMovimiento)
-            document.body.style.backgroundColor = "";
+            /* document.body.style.backgroundColor = ""; */
         
         return () => {
             window.removeEventListener("mousemove", manejarMovimiento)
-            document.body.style.backgroundColor = "tomato";
+            /* document.body.style.backgroundColor = "tomato"; */
             console.log("Detector de mouse detectado")
             
         }
