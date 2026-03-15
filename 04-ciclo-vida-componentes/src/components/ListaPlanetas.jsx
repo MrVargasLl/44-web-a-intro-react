@@ -1,4 +1,4 @@
-function ListaPlanetas({ planetas, eliminarPlaneta, setPlanetaSeleccionado }) {
+function ListaPlanetas({ planetas, eliminarPlaneta, editarPlaneta, setPlanetaSeleccionado }) {
 
     return (
         <div>
@@ -20,6 +20,26 @@ function ListaPlanetas({ planetas, eliminarPlaneta, setPlanetaSeleccionado }) {
                         <button onClick={() => eliminarPlaneta(index)}>
                             Eliminar
                         </button>
+
+                        <button
+                            onClick={() => {
+
+                                const nuevoNombre = prompt("Nuevo nombre del planeta:");
+                                const nuevaDescripcion = prompt("Nueva descripción:");
+
+                                const planetaActualizado = {
+                                    ...planeta,
+                                    nombre: nuevoNombre || planeta.nombre,
+                                    descripcion: nuevaDescripcion || planeta.descripcion
+                                };
+
+                                editarPlaneta(index, planetaActualizado);
+
+                            }}
+                        >
+                            Editar
+                        </button>
+
 
                     </li>
 

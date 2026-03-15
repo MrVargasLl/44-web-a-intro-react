@@ -130,8 +130,8 @@ function App() {
   const handleAterrizar = () => {
     setEstadoNave("Aterrizando");
     setPlanetasVisitados([...planetasVisitados, "Nuevo Planeta - Actualizar Bitacora"]);
-      // recargar combustible al aterrizar
-     setCombustible(100);
+    // recargar combustible al aterrizar
+    setCombustible(100);
   };
 
   // GUARDAR EN LOCALSTORAGE
@@ -149,6 +149,16 @@ function App() {
     const nuevosPlanetas = [...planetas];
     nuevosPlanetas.splice(index, 1);
     setPlanetas(nuevosPlanetas);
+  };
+
+  const editarPlaneta = (index, planetaActualizado) => {
+
+    const nuevosPlanetas = [...planetas];
+
+    nuevosPlanetas[index] = planetaActualizado;
+
+    setPlanetas(nuevosPlanetas);
+
   };
 
   return (
@@ -179,6 +189,7 @@ function App() {
       <ListaPlanetas
         planetas={planetas}
         eliminarPlaneta={eliminarPlaneta}
+        editarPlaneta={editarPlaneta}
         setPlanetaSeleccionado={setPlanetaSeleccionado}
       />
 
