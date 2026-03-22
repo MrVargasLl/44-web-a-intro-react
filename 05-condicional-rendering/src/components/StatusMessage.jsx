@@ -1,18 +1,20 @@
-
+import Alert from '@mui/material/Alert';
 
 export const StatusMessage = ({status, color}) => {
     switch (status) {
         case "loading":
             return (
-    <p style={{color: color}}  >Cargando..</p>
+    <Alert severity="info">Cargando..</Alert>
+    
     )
         case "success":
         return (
-    <p>Datos cargas+dos exitosamente</p>)
+    <Alert severity="success">Datos cargasdos exitosamente.</Alert> )
 
     case "error":
             return (
-    <p style={{color: color}}>Hubo un error</p>)
+    <Alert severity="error">Hubo un error.</Alert>
+            )
         default:
 return (
     <p style={{color: color}}>estdo desconocido</p>)

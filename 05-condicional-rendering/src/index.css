@@ -23,20 +23,48 @@ a:hover {
 }
 
 body {
-  margin: 0;
+
+ background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100vh;          /* altura completa de la ventana */
+  width: 100vw;           /* ancho completo de la ventana */
+  display: flex;           /* usar flex para centrar el contenido */
+  justify-content: center; /* centrar horizontal */
+  align-items: center;     /* centrar vertical */
+  text-align: center;      /* centrar texto dentro de elementos */
+  background-color: red;
+
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+      color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+/*   font-size: 3.2em;
+  line-height: 1.1; */
+  
 }
 
+input  {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+   /*  width: 120px; */
+}
+
+
 button {
-  border-radius: 8px;
+/*   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -44,10 +72,25 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s; */
+  padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #ff4e50;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+  
+
 }
 button:hover {
-  border-color: #646cff;
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  /* border-color: #646cff; */
 }
 button:focus,
 button:focus-visible {
