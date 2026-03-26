@@ -17,6 +17,11 @@ export const AuthProvider = ({ children }) => {
 //const isAuthenticated = false
 const [isAuthenticated, setIsAuthenticated] = useState(false)
 
+    const login = (callback) => {
+        setIsAuthenticated(true)
+        callback
+    }    
+
     return (
         <AuthContext.Provider value={{ isAuthenticated }}>
             {children}
