@@ -7,6 +7,7 @@ export const NavBar = () => {
             <nav>
                 <Link to="/">Inicio</Link>
                 <Link to="/citas">Ver Citas</Link>
+                
             </nav>
 
 

@@ -3,6 +3,9 @@
 
 export const Home = () => {
     return (
-    <div>Home</div>
+        <>
+            <h1>Página de Inicio</h1>
+            <p>Bienvenido a la plataforma de gestión de citas médicas.</p>
+        </>
     )
 }
